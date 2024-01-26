@@ -1,6 +1,6 @@
 # Türkçe Wordle Taklidi
 
-[English](README_EN.md) 🇺🇸
+[English](README.md) 🇺🇸
 
 Türkçe Wordle Taklidi projesine hoş geldiniz! Bu web uygulaması, popüler Wordle oyununun bir taklididir ve Türkçe kelimeleri kullanır.
 
