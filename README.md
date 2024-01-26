@@ -15,10 +15,8 @@ Welcome to the Turkish Wordle Clone project! This web application is a clone of 
 
 ## Screenshots
 
-![image](https://github.com/berkcan25/berkcan25.github.io/assets/103621562/0b7df218-4f7c-4162-bba9-ab53e90ab6d8)
-![image](https://github.com/berkcan25/berkcan25.github.io/assets/103621562/374819dd-9f0b-4604-be78-21feeff275a0)
-![image](https://github.com/berkcan25/berkcan25.github.io/assets/103621562/87ae5b14-27a9-47b3-a5eb-44895d1669cd)
-
+<img src="https://github.com/berkcan25/berkcan25.github.io/assets/103621562/0b7df218-4f7c-4162-bba9-ab53e90ab6d8" alt="screenshot" width="400"/>
+<img src="https://github.com/berkcan25/berkcan25.github.io/assets/103621562/374819dd-9f0b-4604-be78-21feeff275a0" alt="screenshot" width="407"/>
 
 ## Installation
 
@@ -51,10 +49,8 @@ Türkçe Wordle Taklidi projesine hoş geldiniz! Bu web uygulaması, popüler Wo
 
 ## Ekran Görüntüleri
 
-![image](https://github.com/berkcan25/berkcan25.github.io/assets/103621562/0b7df218-4f7c-4162-bba9-ab53e90ab6d8)
-![image](https://github.com/berkcan25/berkcan25.github.io/assets/103621562/374819dd-9f0b-4604-be78-21feeff275a0)
-![image](https://github.com/berkcan25/berkcan25.github.io/assets/103621562/87ae5b14-27a9-47b3-a5eb-44895d1669cd)
-
+<img src="https://github.com/berkcan25/berkcan25.github.io/assets/103621562/0b7df218-4f7c-4162-bba9-ab53e90ab6d8" alt="screenshot" width="400"/>
+<img src="https://github.com/berkcan25/berkcan25.github.io/assets/103621562/374819dd-9f0b-4604-be78-21feeff275a0" alt="screenshot" width="407"/>
 
 ## Kurulum
 
