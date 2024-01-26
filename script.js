@@ -1,9 +1,23 @@
 const WORD = "şöyle";
 const rows = document.getElementsByClassName("word-row");
+const keyboardKeys = document.getElementsByClassName("keyboard-key");
 let activeRow;
-console.log(rows[0]);
 rows[0].classList.add("active-row");
-
+for (const key of keyboardKeys) {
+    if (key.textContent === "GİR") {
+        key.addEventListener("click", () => {
+            checkWord();
+        })
+    } else if (key.textContent === "SİL") {
+        key.addEventListener("click", () => {
+            deleteChar();
+        })
+    } else {
+        key.addEventListener("click", () => {
+            addChar(key.textContent);
+        })
+    }
+}
 function turkishUpperCase(text) {
     return text.replace(/i/g, "İ").toUpperCase();
 }
