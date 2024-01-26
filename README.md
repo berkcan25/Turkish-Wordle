@@ -13,8 +13,7 @@ Welcome to the Turkish Wordle Clone project! This web application is a clone of 
 ## How to Play
 
 1. Enter a Turkish word to start the game.
-2. Guess the correc![Uploading image.png…]()
-t word within a limited number of attempts.
+2. Guess the correct word within a limited number of attempts.
 
 ## Screenshots
 
