@@ -2,7 +2,7 @@
 
 [Türkçe](README_TR.md) 🇹🇷
 
-Welcome to the Turkish Wordle Clone project! This web application is a clone of the popular Wordle game, using Turkish words.
+Welcome to the Turkish Wordle project! This web application is a version of the popular Wordle game, using Turkish words.
 
 ## Features
 
