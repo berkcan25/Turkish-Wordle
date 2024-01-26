@@ -8,7 +8,7 @@ Türkçe Wordle Taklidi projesine hoş geldiniz! Bu web uygulaması, popüler Wo
 
 - **Türkçe Kelimeler:** Türkçe kelime hazinenizi geliştirin!
 - **Basit Arayüz:** Rahat bir oyun deneyimi için sezgisel tasarım barındırır.
-- **Dinamik:** Oyunu bilgisayar, tablet ve telefondan oynayabilirsiniz.
+- **Dinamik:** Oyunu bilgisayar, tablet veya telefonunuzdan oynayabilirsiniz.
 
 ## Oynayışı
 
