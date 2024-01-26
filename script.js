@@ -35,7 +35,7 @@ function deleteChar() {
         }
     };
     if (activeRow) {
-        const filledCells = activeRow.querySelectorAll(".filled");
+        const filledCells = activeRow.querySelectorAll(".filled:not(.correct-letter)");
         if (filledCells.length > 0) {
             filledCells[filledCells.length - 1].innerHTML = "";
             filledCells[filledCells.length - 1].classList.remove("filled");
@@ -81,7 +81,6 @@ function checkWord() {
                 alert("TEBRİKLER");
             } else if (possibleWords.includes(guess)) {
                 let wordArray = turkishUpperCase(WORD).split("");
-                // let guessArray = guess.split("");
                 console.log(wordArray);
                 while (Object.values(wordArray).length > 0) {
                     for (let i = 0; i < 5; i++) {
@@ -90,7 +89,6 @@ function checkWord() {
                             filledCells[i].classList.add("correct-letter");
                             document.getElementById(letter+"-key").classList.add("correct-letter");
                             delete wordArray[i];
-                            // delete guessArray[i];
                         }
                     }
                     console.log(wordArray);
@@ -100,8 +98,6 @@ function checkWord() {
                         if (wordArray.includes(letter)) {
                             filledCells[i].classList.add("contains-letter");
                             document.getElementById(letter+"-key").classList.add("contains-letter");
-                            //delete wordArray[wordArray.indexOf(letter)];
-                            // delete guessArray[i];
                         }
                     }
                     for (let i = 0; i < 5; i++) {
