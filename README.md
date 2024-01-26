@@ -14,6 +14,7 @@ Welcome to the Turkish Wordle Clone project! This web application is a clone of 
 
 1. Enter a Turkish word to start the game.
 2. Guess the correct word within a limited number of attempts.
+3. The word will change everytime you refresh the page!
 
 ## Screenshots
 
