@@ -81,7 +81,6 @@ function checkWord() {
                 alert("TEBRİKLER");
             } else if (possibleWords.includes(guess)) {
                 let wordArray = turkishUpperCase(WORD).split("");
-                console.log(wordArray);
                 while (Object.values(wordArray).length > 0) {
                     for (let i = 0; i < 5; i++) {
                         let letter = guess[i];
@@ -91,10 +90,8 @@ function checkWord() {
                             delete wordArray[i];
                         }
                     }
-                    console.log(wordArray);
                     for (let i = 0; i < 5; i++) {
                         let letter = guess[i];
-                        console.log(wordArray.includes(letter));
                         if (wordArray.includes(letter)) {
                             filledCells[i].classList.add("contains-letter");
                             document.getElementById(letter+"-key").classList.add("contains-letter");
@@ -109,7 +106,6 @@ function checkWord() {
                         }
                         delete wordArray[i];
                     }
-                    console.log(wordArray);
                 }
                 activeRow.classList.remove("active-row");
                 if (currRowNum === 5) {
