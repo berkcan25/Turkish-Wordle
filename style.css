@@ -1,8 +1,5 @@
 /*default*/
 @media screen and (width > 75em)  and (height > 50em){
-  body {
-    background-color: #006eff;
-  }
     .keyboard-key {
         margin: .1em .3em;
         padding: 1.5vh 1vw;
@@ -17,9 +14,6 @@
   }
   /*square*/
 @media screen and (width > 75em) and (height < 50em) {
-  body {
-    background-color: #006eff;
-  }
     .keyboard-key {
         margin: .1em .3em;
         padding: 1vh .75vw;
@@ -35,9 +29,6 @@
 
 /*portrait*/
 @media screen and (width < 75em) and (height > 50em){
-    body {
-      background-color: #60d955;
-    }
     .keyboard-key {
         margin:  .2em;
         padding: 1.5vh 2vw;
@@ -59,9 +50,6 @@
 
 /*landscape*/
   @media screen and (width < 75em) and (height < 50em){
-    body {
-      background-color: #d9558e;
-    }
     .keyboard-key {
         margin:  .2em;
         padding: 1.5vh 2vw;
