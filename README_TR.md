@@ -14,6 +14,7 @@ Türkçe Wordle Taklidi projesine hoş geldiniz! Bu web uygulaması, popüler Wo
 
 1. Oyunu başlatmak için bir Türkçe kelime girin.
 2. Belirli bir deneme sayısı içinde kelimeyi tahmin edin.
+3. Her sayfayı yenilediğinizde kelime değişir!
 
 ## Ekran Görüntüleri
 
