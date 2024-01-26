@@ -98,11 +98,12 @@ function checkWord() {
                         if (wordArray.includes(letter)) {
                             filledCells[i].classList.add("contains-letter");
                             document.getElementById(letter+"-key").classList.add("contains-letter");
+                            delete wordArray[wordArray.indexOf(letter)];
                         }
                     }
                     for (let i = 0; i < 5; i++) {
                         let letter = guess[i];
-                        if (wordArray[i] !== undefined && letter !== wordArray[i] && (filledCells[i].classList.contains("contains-letter") === false)) {
+                        if (letter !== wordArray[i] && ((filledCells[i].classList.contains("contains-letter") || filledCells[i].classList.contains("correct-letter")) === false)) {
                             filledCells[i].classList.add("incorrect-letter");
                             document.getElementById(letter+"-key").classList.add("incorrect-letter");
                         }
