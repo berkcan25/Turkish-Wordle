@@ -1,7 +1,6 @@
 import {possibleWords} from "./words.js";
 
-// const WORD = possibleWords[Math.floor(Math.random() * possibleWords.length)];
-const WORD = "ERGEN";
+const WORD = possibleWords[Math.floor(Math.random() * possibleWords.length)];
 const rows = document.getElementsByClassName("word-row");
 const keyboardKeys = document.getElementsByClassName("keyboard-key");
 let activeRow;
@@ -36,7 +35,7 @@ function deleteChar() {
         }
     };
     if (activeRow) {
-        const filledCells = activeRow.querySelectorAll(".filled:not(.correct-letter)");
+        const filledCells = activeRow.querySelectorAll(".filled:not(.correct-letter):not(.incorrect-letter):not(.contains-letter)");
         if (filledCells.length > 0) {
             filledCells[filledCells.length - 1].innerHTML = "";
             filledCells[filledCells.length - 1].classList.remove("filled");
