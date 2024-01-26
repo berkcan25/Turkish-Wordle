@@ -1,6 +1,7 @@
 import {possibleWords} from "./words.js";
 
-const WORD = possibleWords[Math.floor(Math.random() * possibleWords.length)];
+// const WORD = possibleWords[Math.floor(Math.random() * possibleWords.length)];
+const WORD = "ERGEN";
 const rows = document.getElementsByClassName("word-row");
 const keyboardKeys = document.getElementsByClassName("keyboard-key");
 let activeRow;
@@ -92,7 +93,7 @@ function checkWord() {
                     }
                     for (let i = 0; i < 5; i++) {
                         let letter = guess[i];
-                        if (wordArray.includes(letter)) {
+                        if (wordArray.includes(letter) && (filledCells[i].classList.contains("correct-letter")) === false) {
                             filledCells[i].classList.add("contains-letter");
                             document.getElementById(letter+"-key").classList.add("contains-letter");
                             delete wordArray[wordArray.indexOf(letter)];
