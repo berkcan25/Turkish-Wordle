@@ -1,8 +1,8 @@
-# Türkçe Wordle Taklidi
+# Türkçe Wordle
 
 [English](README.md) 🇺🇸
 
-Türkçe Wordle Taklidi projesine hoş geldiniz! Bu web uygulaması, meşhur Wordle oyununun taklididir ve Türkçe kelimeler içerir.
+Türkçe Wordle projesine hoş geldiniz! Bu web uygulaması, meşhur Wordle oyununun Türkçe kelimeler içeren vesiyonudur.
 
 ## Özellikleri
 
