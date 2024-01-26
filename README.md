@@ -1,4 +1,4 @@
-# Turkish Wordle Clone
+# Turkish Wordle
 
 [Türkçe](README_TR.md) 🇹🇷
 
