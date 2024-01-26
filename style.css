@@ -1,39 +1,112 @@
-@media screen and (width < 450px) {
+/*default*/
+@media screen and (width > 75em)  and (height > 50em){
+  body {
+    background-color: #006eff;
+  }
     .keyboard-key {
-        background-color: #dadde1;
-        border: none;
-        border-radius: 4px;
-        margin: .1rem .3rem;
-        padding: .8rem .28rem;
-        font-size: 1em;
-        font-weight: bold;
-        cursor: pointer;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        text-transform: uppercase;
+        margin: .1em .3em;
+        padding: 1.5vh 1vw;
+        font-size: 2rem;
+      }
+      .letter-cell {
+        max-width: 8vh;
+        width: 5vw;
+        height: 8vh;
+        font-size: 3rem;
+      }
+  }
+  /*square*/
+@media screen and (width > 75em) and (height < 50em) {
+  body {
+    background-color: #006eff;
+  }
+    .keyboard-key {
+        margin: .1em .3em;
+        padding: 1vh .75vw;
+        font-size: 1rem;
+      }
+      .letter-cell {
+        max-width: 8vh;
+        width: 5vw;
+        height: 8vh;
+        font-size: 2.5rem;
       }
   }
 
-@media screen and (width > 450px) {
+/*portrait*/
+@media screen and (width < 75em) and (height > 50em){
+    body {
+      background-color: #60d955;
+    }
     .keyboard-key {
-        background-color: #dadde1;
-        border: none;
-        border-radius: 4px;
-        margin: .1rem .3rem;
-        padding: .7rem .5rem;
-        font-size: 1em;
-        font-weight: bold;
-        cursor: pointer;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        text-transform: uppercase;
+        margin:  .2em;
+        padding: 1.5vh 2vw;
+        font-size: 2rem;
+      }
+      .letter-cell {
+        width: 15vw;
+        height: 10vh;
+        max-width: 10vh;
+        max-height: 17vw;
+        font-size: 5rem;
+      }
+      #word-grid {
+        display: grid;
+        grid-gap: 1em;
+        margin: 5vh;
       }
   }
+
+/*landscape*/
+  @media screen and (width < 75em) and (height < 50em){
+    body {
+      background-color: #d9558e;
+    }
+    .keyboard-key {
+        margin:  .2em;
+        padding: 1.5vh 2vw;
+        font-size: 2rem;
+      }
+      .letter-cell {
+        width: 15vw;
+        height: 12vh;
+        max-width: 12vh;
+        font-size: 2.5rem;
+      }
+      #word-grid {
+        display: grid;
+        grid-gap: 1em;
+        margin: 5vh;
+      }
+  }
+
+  .keyboard-key {
+    background-color: #dadde1;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+  }
+  .letter-cell {
+    background-color: #d3d6da;
+    border: 2px solid #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  #word-grid {
+    display: grid;
+  }
+
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   margin: 0;
   padding: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -53,33 +126,21 @@ body {
 .word-row {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 5px;
+  gap: 10px;
 }
 
-.letter-cell {
-  width: 4rem;
-  height: 4rem;
-  background-color: #d3d6da;
-  border: 2px solid #808080;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.correct_letter {
+.correct-letter {
   background-color: #60d955;
 }
-.contains_letter {
+.contains-letter {
   background-color: #f0ad4e;
 }
-.incorrect_letter {
+.incorrect-letter {
   background-color: #d9534f;
 }
 
 #keyboard-container {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .keyboard-row {
@@ -87,8 +148,6 @@ body {
   justify-content: center;
   margin-bottom: 5px;
 }
-
-
 
 .keyboard-key:hover {
     background-color: #c1c4c8;

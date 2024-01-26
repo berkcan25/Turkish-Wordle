@@ -2,6 +2,7 @@ const WORD = "şöyle";
 const rows = document.getElementsByClassName("word-row");
 const keyboardKeys = document.getElementsByClassName("keyboard-key");
 let activeRow;
+
 rows[0].classList.add("active-row");
 for (const key of keyboardKeys) {
     if (key.textContent === "GİR") {
@@ -74,22 +75,29 @@ function checkWord() {
             const guess = filledCells[0].textContent + filledCells[1].textContent + filledCells[2].textContent + filledCells[3].textContent + filledCells[4].textContent;
             if (guess === turkishUpperCase(WORD)) {
                 for (let i = 0; i < 5; i++) {
-                    filledCells[i].classList.add("correct_letter");
+                    filledCells[i].classList.add("correct-letter");
                 }
                 activeRow.classList.remove("active-row");
                 alert("TEBRİKLER");
             } else if (possibleWords.includes(guess)) {
-                let word = turkishUpperCase(WORD);
+                let wordArray = turkishUpperCase(WORD).split("");
                 for (let i = 0; i < 5; i++) {
                     let letter = turkishUpperCase(filledCells[i].textContent);
-                    if (letter === word[i]) {
-                        filledCells[i].classList.add("correct_letter");
-                    } else if (word.includes(letter)) {
-                        filledCells[i].classList.add("contains_letter");
+                    if (letter === wordArray[i]) {
+                        filledCells[i].classList.add("correct-letter");
+                        document.getElementById(letter+"-key").classList.add("correct-letter");
+                    } else if (wordArray.includes(letter)) {
+                        filledCells[i].classList.add("contains-letter");
+                        document.getElementById(letter+"-key").classList.add("contains-letter");
+                        wordArray.splice(wordArray.indexOf(letter), 1);
                     } else {
-                        filledCells[i].classList.add("incorrect_letter");
+                        if (!(document.getElementById(letter+"-key").classList.contains("contains-letter"))) {
+                            document.getElementById(letter+"-key").classList.add("incorrect-letter");
+                        }
+                        filledCells[i].classList.add("incorrect-letter");
                     }
                 }
+                console.log(wordArray);
                 activeRow.classList.remove("active-row");
                 if (currRowNum === 5) {
                     // GAME OVER
